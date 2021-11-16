@@ -1,0 +1,37 @@
+main()
+{
+  String name = "Arslan Shabbir";
+  print("name is $name");
+  print(name.isEmpty);
+  print(name.isNotEmpty);
+  
+  // bool contains(Pattern other, [int startIndex = 0])
+  
+  print(name.contains('a',0));
+  print(name.contains('A',5));
+  
+  print(name.endsWith('r'));
+  print(name.endsWith('n'));
+  
+  print(name[10]);
+  print(name[10].toUpperCase());
+  
+  print(name.indexOf('n',0)); //to find the character on a specify index of array/String
+  print(name.substring(0,6)); // to print the the value of specific indexes
+  
+  name=name.replaceAll('Arslan','Muhammad');
+  print(name);
+  name=name.replaceAll('Shabbir','Arslan');
+  print(name);
+  
+  print(name.split(""));
+  print(name.split("Muh"));
+  print(name.split("Arslan"));
+  print(name.split("A"));
+  List A=["A","r","s","l","a","n"];
+  print(A.join());
+  
+  
+  
+  
+}
